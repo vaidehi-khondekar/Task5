@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>E-Shop Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>E-Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products" class="section">
+      <h2>Products</h2>
+      <div class="product-grid" id="product-list">
+        <!-- Products will load via JS -->
+      </div>
+    </section>
+
+    <section id="cart" class="section">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <p id="cart-total">Total: ₹0</p>
+      <button class="btn" id="checkout-btn">Checkout</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 E-Shop. Responsive & optimized for internship showcase.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
